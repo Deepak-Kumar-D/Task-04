@@ -35,10 +35,10 @@ req.onload=function(){
     console.log(tpop);
 
     //Print the country which use US Dollars as currency.
-    console.log("COUNTIRES WITH US DOLLARS AS THEIR CURRENCY:")
+    console.log("\nCOUNTIRES WITH US DOLLARS AS THEIR CURRENCY:")
     for(let key in data)
     {
-        if(data[key].currencies[1]=="USD")
+        if(data[key].currencies[0].code=="USD")
         {
             console.log(data[key].name);
         }
